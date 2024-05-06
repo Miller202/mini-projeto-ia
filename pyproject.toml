@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mini-projeto-ia"
+version = "0.1.0"
+description = ""
+authors = ["Michael Miller <41575314+Miller202@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "0.28"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
