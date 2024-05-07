@@ -7,8 +7,8 @@ load_dotenv()
 def carregar_regras_avancadas():
     regras = {
         "regras": [
-            "Renda alta (mais de 3 vezes o valor do empréstimo solicitado) com dívidas baixas (<30% da renda): Risco Baixo.",
-            "Renda média (1 a 3 vezes o valor do empréstimo) com dívidas moderadas (30-50% da renda): Risco Moderado.",
+            "Renda alta (maior que 3 vezes o valor do empréstimo solicitado) com dívidas baixas (<30% da renda): Risco Baixo.",
+            "Renda média (1 a 3 vezes maior que o valor do empréstimo) com dívidas moderadas (30-50% da renda): Risco Moderado.",
             "Renda baixa (menor que o valor do empréstimo) com dívidas altas (>50% da renda): Risco Alto.",
             "Dívidas totais <30% da renda indicam gestão financeira saudável: Risco Baixo.",
             "Dívidas entre 30% e 50% da renda: Risco Moderado.",
