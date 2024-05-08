@@ -50,7 +50,7 @@ class MiniAkinatorGPT:
                 "É humano?": "sim",
                 "Faz parte de um grupo?": "sim",
                 "É um bilionário?": "sim",
-                "Consegue voar com o traje?": "não",
+                "Ele se veste como um morcego?": "sim",
             },
             "Mulher Maravilha": {
                 "É um herói?": "sim",
@@ -83,6 +83,14 @@ class MiniAkinatorGPT:
                 "É humano?": "sim",
                 "Faz parte de um grupo?": "sim",
                 "Foi picado por uma aranha radioativa?": "sim",
+            },
+            "Capitão América": {
+                "É um herói?": "sim",
+                "Usa um traje especial?": "sim",
+                "Tem superpoderes?": "sim",
+                "É humano?": "sim",
+                "Faz parte de um grupo?": "sim",
+                "Ele foi um soldado héroi de guerra?": "sim",
             },
             "Hulk": {
                 "É um herói?": "sim",
@@ -135,7 +143,9 @@ class MiniAkinatorGPT:
             "É um vilão do Batman?",
             "É irmão de Thor?",
             "É o rei de Wakanda?",
-            "Consegue voar com o traje?"
+            "Consegue voar com o traje?",
+            "Ele se veste como um morcego?",
+            "Ele foi um soldado héroi de guerra?"
         ]
 
     def gpt3_predict_character(self, answers):
@@ -144,10 +154,10 @@ class MiniAkinatorGPT:
         Eu tenho uma lista de personagens e suas características:
         {self.characters}
 
-        Baseado nas seguintes respostas, tente adivinhar o personagem:
+        Baseado nas seguintes respostas, tente adivinhar qual é o personagem:
         {answers}
 
-        Responda apenas com o nome do personagem ou "Desconhecido" se não conseguir adivinhar.
+        Responda apenas com o nome do personagem que você acredita que seja.
         """
 
         response = openai.Completion.create(
