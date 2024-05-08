@@ -84,6 +84,16 @@ class MiniAkinatorGPT:
                 "Faz parte de um grupo?": "sim",
                 "Foi picado por uma aranha radioativa?": "sim",
             },
+            "Capitão América": {
+                "É um herói?": "sim",
+                "Usa um traje especial?": "sim",
+                "Tem superpoderes?": "sim",
+                "É humano?": "sim",
+                "Faz parte de um grupo?": "sim",
+                "Foi picado por uma aranha radioativa?": "não",
+                "É o rei de Wakanda?": "não",
+                "É um cirurgião convertido em feiticeiro?": "não"
+            },
             "Hulk": {
                 "É um herói?": "sim",
                 "Usa um traje especial?": "não",
